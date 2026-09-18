@@ -1,0 +1,117 @@
+.copy {
+  padding-top: var(--space-2);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: var(--text-3);
+}
+
+.headline {
+  margin: var(--space-5) 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  color: var(--text-1);
+  text-wrap: balance;
+}
+
+.subhead {
+  margin: var(--space-5) 0 0;
+  max-width: 46ch;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-2);
+  text-wrap: pretty;
+}
+
+.ctaGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    background-color var(--dur-hover) ease-out,
+    color var(--dur-hover) ease-out,
+    opacity var(--dur-hover) ease-out;
+}
+
+.primary {
+  padding: 0 var(--space-5);
+  border-radius: var(--radius-cta);
+  background: var(--text-1);
+  color: var(--bg);
+}
+
+.primary:hover {
+  opacity: 0.88;
+}
+
+.secondary {
+  padding: 0 var(--space-1);
+  border-bottom: 1px solid var(--border-hover);
+  border-radius: 0;
+  color: var(--text-1);
+}
+
+.secondary:hover {
+  color: var(--text-2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .copy > * {
+    opacity: 0;
+    animation: copy-enter var(--dur-enter) var(--ease-out) forwards;
+  }
+
+  .copy > *:nth-child(1) {
+    animation-delay: 0ms;
+  }
+  .copy > *:nth-child(2) {
+    animation-delay: 40ms;
+  }
+  .copy > *:nth-child(3) {
+    animation-delay: 80ms;
+  }
+  .copy > *:nth-child(4) {
+    animation-delay: 120ms;
+  }
+}
+
+@keyframes copy-enter {
+  from {
+    opacity: 0;
+    translate: 0 12px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .subhead {
+    max-width: none;
+  }
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Robin Roy — Full-stack engineer, Sharjah UAE</title>
+    <meta
+      name="description"
+      content="Full-stack engineer in Sharjah building government-scale platforms and applied AI systems. React, TypeScript, Django, Spring Boot."
+    />
+    <link rel="canonical" href="https://robinroy.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://robinroy.dev/" />
+    <meta
+      property="og:title"
+      content="Robin Roy — Full-stack engineer, Sharjah UAE"
+    />
+    <meta
+      property="og:description"
+      content="Government-scale platform engineering and production RAG systems."
+    />
+    <meta property="og:image" content="https://robinroy.dev/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/inter-tight-600.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="image"
+      type="image/avif"
+      href="/images/portrait-880.avif"
+      fetchpriority="high"
+    />
+
+    <style>
+      @font-face {
+        font-family: "Inter Tight";
+        src: url("/fonts/inter-tight-400.woff2") format("woff2");
+        font-weight: 400;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Inter Tight";
+        src: url("/fonts/inter-tight-500.woff2") format("woff2");
+        font-weight: 500;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Inter Tight";
+        src: url("/fonts/inter-tight-600.woff2") format("woff2");
+        font-weight: 600;
+        font-display: swap;
+      }
+    </style>
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          document.documentElement.dataset.theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : prefersDark
+                ? "dark"
+                : "light";
+        } catch (error) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
