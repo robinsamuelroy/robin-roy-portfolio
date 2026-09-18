@@ -1,5 +1,5 @@
 import type { CSSProperties, ReactNode } from "react";
-import styles from "./BentoTile.module.css";
+import styles from "./Bentotile.module.css";
 
 export type TileArea = "portrait" | "metric" | "accent" | "stack";
 export type TileTone = "surface" | "accent" | "media";

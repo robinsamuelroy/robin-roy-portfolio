@@ -4,7 +4,7 @@ import type {
   MetricContent,
   PortraitContent,
 } from "../../content/heroContent";
-import styles from "./HeroTiles.module.css";
+import styles from "./Herotiles.module.css";
 
 export function PortraitTile({ portrait }: { portrait: PortraitContent }) {
   return (
