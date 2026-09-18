@@ -40,7 +40,7 @@ export const heroContent: HeroContent = {
   eyebrow: "Full-stack engineer · Sharjah, UAE",
   headline: "I build government-scale platforms, and the AI that runs on them.",
   subhead:
-    "Mid-level full-stack engineer in Sharjah. Currently building statewide agricultural reporting systems for the Government of Kerala.",
+    "Full-stack engineer based in Sharjah, building production-grade web platforms and AI systems with Python, Django, FastAPI, React, and modern LLM technologies.",
   primaryCta: {
     label: "View selected work",
     href: "#work",
